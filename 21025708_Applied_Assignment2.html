@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Applied Science Assignment Final</title>
+<title>Applied Science Assignment Final (1) (2)</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13074,13 +13074,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Install-wbgapi-to-import-data-from-world-bank-using-API">Install wbgapi to import data from world bank using API<a class="anchor-link" href="#Install-wbgapi-to-import-data-from-world-bank-using-API">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#install wbgapi to import data from world bank using API</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">wbgapi</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">wbgapi</span>
 </pre></div>
 
     </div>
@@ -13097,15 +13103,15 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: wbgapi in c:\programdata\anaconda3\lib\site-packages (1.0.7)
+<pre>Requirement already satisfied: wbgapi in c:\programdata\anaconda3\lib\site-packages (1.0.7)Note: you may need to restart the kernel to use updated packages.
+
 Requirement already satisfied: PyYAML in c:\programdata\anaconda3\lib\site-packages (from wbgapi) (5.3.1)
-Requirement already satisfied: requests in c:\programdata\anaconda3\lib\site-packages (from wbgapi) (2.24.0)
 Requirement already satisfied: tabulate in c:\programdata\anaconda3\lib\site-packages (from wbgapi) (0.8.9)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in c:\programdata\anaconda3\lib\site-packages (from requests-&gt;wbgapi) (1.25.9)
+Requirement already satisfied: requests in c:\programdata\anaconda3\lib\site-packages (from wbgapi) (2.24.0)
 Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in c:\programdata\anaconda3\lib\site-packages (from requests-&gt;wbgapi) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in c:\programdata\anaconda3\lib\site-packages (from requests-&gt;wbgapi) (1.25.9)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in c:\programdata\anaconda3\lib\site-packages (from requests-&gt;wbgapi) (2.10)
 Requirement already satisfied: certifi&gt;=2017.4.17 in c:\programdata\anaconda3\lib\site-packages (from requests-&gt;wbgapi) (2020.6.20)
-Note: you may need to restart the kernel to use updated packages.
 </pre>
 </div>
 </div>
@@ -13116,7 +13122,7 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Import important libraries for data manipulation and visualizzation</span>
@@ -13135,7 +13141,7 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Need indicator IDS to import data from World bank in DataFrame</span>
@@ -13177,7 +13183,7 @@ AND     EG.ELC.ACCS.ZS  1.000000e+02  1.000000e+02  1.000000e+02  1.000000e+02
 ASM     EG.ELC.ACCS.ZS           NaN           NaN           NaN           NaN
         SP.POP.GROW     1.327259e-01  2.688244e-02 -1.201309e-01 -2.191172e-01
         SP.URB.TOTL     4.869900e+04  4.868400e+04  4.860300e+04  4.848100e+04
-DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
+DZA     EG.ELC.ACCS.ZS  9.908701e+01  9.918666e+01  9.935025e+01  9.963549e+01
         SP.POP.GROW     2.033587e+00  2.045372e+00  2.051352e+00  2.044909e+00
         SP.URB.TOTL     2.733260e+07  2.814651e+07  2.897762e+07  2.982173e+07
 </pre>
@@ -13190,7 +13196,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#reads the data of the data frame from the stored csv above and proper description are shown below in dataframe formate</span>
@@ -13208,7 +13214,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[131]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13420,11 +13426,22 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Funcation which the file name as argument and return two dataframes </span>
 <span class="k">def</span> <span class="nf">ingest_manipulate</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;D:\New folder\a_Data.csv&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return two Dataframes  </span>
+<span class="sd"> </span>
+<span class="sd">    Read the file name as Argument</span>
+<span class="sd"> </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ------------</span>
+<span class="sd">        file_name</span>
+<span class="sd">    Return</span>
+<span class="sd">    -----------</span>
+<span class="sd">        DataFrame1(df1) : Return Years as a columns</span>
+<span class="sd">            DataFrame1(df2) : Return countries as a columns. &quot;&quot;&quot;</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
     <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Series Name&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Country Code&#39;</span><span class="p">,</span> <span class="s1">&#39;Series Code&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13438,11 +13455,12 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#funcation cal </span>
 <span class="n">df1</span><span class="p">,</span> <span class="n">df2</span> <span class="o">=</span> <span class="n">ingest_manipulate</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ingest_manipulate</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
 <span class="n">df1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Dataframe1.csv&#39;</span><span class="p">)</span>
 <span class="n">df2</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Dataframe2.csv&#39;</span><span class="p">)</span>
 </pre></div>
@@ -13451,10 +13469,38 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Return two Dataframes  
+ 
+    Read the file name as Argument
+ 
+    Parameters
+    ------------
+        file_name
+    Return
+    -----------
+        DataFrame1(df1) : Return Years as a columns
+            DataFrame1(df2) : Return countries as a columns. 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#first dataframe</span>
@@ -13471,7 +13517,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13633,7 +13679,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#2nd dataframe</span>
@@ -13650,7 +13696,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13784,7 +13830,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#mean and standard deviation statistics property of some countries all are mentioned below</span>
@@ -13801,7 +13847,7 @@ DZA     EG.ELC.ACCS.ZS  9.907404e+01  9.918689e+01  9.940287e+01  9.961514e+01
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13822,7 +13868,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#mean Statistics</span>
@@ -13839,7 +13885,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13860,7 +13906,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#standard deviation statistics</span>
@@ -13877,7 +13923,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13898,7 +13944,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;AND&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
@@ -13914,7 +13960,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13935,7 +13981,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#mean statistics</span>
@@ -13952,7 +13998,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13973,7 +14019,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;ATG&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -13989,7 +14035,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14010,7 +14056,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#in order to get all statics of data a decscribe funcation is used</span>
@@ -14027,7 +14073,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14126,7 +14172,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14142,7 +14188,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14348,7 +14394,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">proper_details_description</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
@@ -14364,7 +14410,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14576,7 +14622,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#visualization of population growth annual </span>
@@ -14636,7 +14682,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#visualization of population growth annual with rapid increasing of urban population</span>
@@ -14678,7 +14724,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#visulaization of access to electricity by countries in 2017</span>
@@ -14719,7 +14765,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#all summary statistics</span>
@@ -14737,13 +14783,13 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[143]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x216bac9a9a0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19b0036c070&gt;</pre>
 </div>
 
 </div>
